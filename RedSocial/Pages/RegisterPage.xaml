@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RedSocial.Pages.RegisterPage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" Spacing="25" Padding="30,0">
+            <Label Text="Registro"></Label>
+            <Entry x:Name="txtNombre" Placeholder="Nombre(s)"></Entry>
+            <Entry x:Name="txtPrimerApellido" Placeholder="Primer apellido"></Entry>
+            <Entry x:Name="txtSegundoApellido" Placeholder="Segundo apellido"></Entry>
+            <Entry x:Name="txtNickName" Placeholder="Nickname"></Entry>
+            <StackLayout>
+                <Label Text="Fecha de nacimiento"></Label>
+                <DatePicker x:Name="dpkFechaNacimiento"></DatePicker>
+            </StackLayout>
+            <Entry x:Name="txtURLFotografia" Placeholder="URL de la fotografia"></Entry>
+            <StackLayout>
+                <Label Text="Fecha de nacimiento"></Label>
+                <Picker x:Name="pckGenero"></Picker>
+            </StackLayout>
+            <Button x:Name="btnRegistrar" Text="Registrar"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
