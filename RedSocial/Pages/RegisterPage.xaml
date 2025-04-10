@@ -20,7 +20,7 @@
                 <Label Text="Género"></Label>
                 <Picker x:Name="pckGenero" ItemDisplayBinding="{Binding NombreGenero}"></Picker>
             </StackLayout>
-            <Button x:Name="btnRegistrar" Text="Registrar" ></Button>
+            <Button x:Name="btnRegistrar" Text="Registrar" Clicked="BtnRegistrar_OnClicked"></Button>
         </StackLayout>
         </ScrollView>
     </ContentPage.Content>
