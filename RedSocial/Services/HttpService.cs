@@ -1,3 +1,4 @@
+using System.Net.Http.Json;
 using Newtonsoft.Json;
 
 namespace RedSocial.Services;
@@ -22,5 +23,11 @@ public class HttpService : IHttpService
 
         var json = await response.Content.ReadAsStringAsync();
         return JsonConvert.DeserializeObject<T>(json);
+    }
+
+    public async Task<T> GetInfo<T>(string url, T model)
+    {
+        var jsonDevuelto = await _httpClient.GetFromJsonAsync<T>($"{url}");
+        return jsonDevuelto;
     }
 }

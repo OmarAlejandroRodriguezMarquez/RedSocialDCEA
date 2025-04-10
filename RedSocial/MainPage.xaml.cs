@@ -18,6 +18,6 @@ public partial class MainPage : ContentPage
     {
         Character character = new Character();
         character = await _httpService.GetAsync<Character>();
-        await Navigation.PushAsync(new RegisterPage());
+        await Navigation.PushAsync(new RegisterPage(_httpService));
     }
 }

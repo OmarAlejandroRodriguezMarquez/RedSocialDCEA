@@ -1,0 +1,130 @@
+# Archivos de compilación
+bin/
+obj/
+
+# Configuración de usuario en Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Archivos de dependencias
+packages/
+project.lock.json
+project.assets.json
+*.nuget.props
+*.nuget.targets
+
+# Configuración específica de macOS
+.DS_Store
+*.swp
+*.swo
+
+# Configuración específica de Windows
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Archivos generados por JetBrains Rider
+.idea/
+
+# Archivos de depuración
+*.pdb
+*.mdb
+
+# Archivos de logs
+*.log
+logs/
+**/*.log
+
+# Archivos de cache de .NET
+*.pidb
+*.ilk
+*.obj
+*.exe
+*.dll
+*.pdb
+*.nupkg
+*.snupkg
+*.psess
+*.vsp
+*.vspx
+*.coverage
+*.coveragexml
+
+# Configuración de VS Code
+.vscode/
+launch.json
+tasks.json
+
+# Archivos de configuración de MAUI y XAML
+*.xaml.cs
+*.xaml.g.cs
+*.xaml.g.i.cs
+*.xaml.lzma
+*.g.cs
+*.g.i.cs
+
+# Archivos de Android
+.gradle/
+local.properties
+android/.cxx/
+android/.externalNativeBuild/
+android/obj/
+android/bin/
+android/app/build/
+
+# Archivos de iOS/Mac Catalyst
+ios/.vs/
+ios/bin/
+ios/obj/
+macos/bin/
+macos/obj/
+
+# Archivos de Xamarin/MAUI específicos
+*.db
+*.sqlite
+*.sqlite3
+*.bak
+*.bak-*
+*.tmp
+*.tlog
+*.cache
+
+# Archivos generados por ResX
+*.Designer.cs
+*.resx
+*.resources
+
+# Certificados y claves privadas (¡importante no subir estos!)
+*.pfx
+*.cer
+*.key
+*.p12
+
+# Archivos específicos de Rider
+.idea/
+*.sln.iml
+
+# Archivos temporales de MAUI
+MauiProgram.cs.old
+
+# Configuración específica de MAUI Windows
+Platforms/Windows/bin/
+Platforms/Windows/obj/
+
+# Configuración específica de MAUI Android
+Platforms/Android/bin/
+Platforms/Android/obj/
+
+# Configuración específica de MAUI iOS
+Platforms/iOS/bin/
+Platforms/iOS/obj/
+
+# Configuración específica de MAUI MacCatalyst
+Platforms/MacCatalyst/bin/
+Platforms/MacCatalyst/obj/
+
+# Archivos generados por NuGet
+.nuget/

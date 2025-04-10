@@ -4,6 +4,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RedSocial.Pages.RegisterPage">
     <ContentPage.Content>
+        <ScrollView>
         <StackLayout VerticalOptions="Center" Spacing="25" Padding="30,0">
             <Label Text="Registro"></Label>
             <Entry x:Name="txtNombre" Placeholder="Nombre(s)"></Entry>
@@ -16,10 +17,11 @@
             </StackLayout>
             <Entry x:Name="txtURLFotografia" Placeholder="URL de la fotografia"></Entry>
             <StackLayout>
-                <Label Text="Fecha de nacimiento"></Label>
-                <Picker x:Name="pckGenero"></Picker>
+                <Label Text="Género"></Label>
+                <Picker x:Name="pckGenero" ItemDisplayBinding="{Binding NombreGenero}"></Picker>
             </StackLayout>
-            <Button x:Name="btnRegistrar" Text="Registrar"></Button>
+            <Button x:Name="btnRegistrar" Text="Registrar" ></Button>
         </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

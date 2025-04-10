@@ -19,7 +19,7 @@ public static class MauiProgram
         builder.Services.AddSingleton<HttpClient>(sp =>
         {
             var httpClient = new HttpClient();
-            httpClient.BaseAddress = new Uri("https://rickandmortyapi.com/api/character/");
+            httpClient.BaseAddress = new Uri("https://redsocialomar.azurewebsites.net/api/");
             return httpClient;
         });
         
